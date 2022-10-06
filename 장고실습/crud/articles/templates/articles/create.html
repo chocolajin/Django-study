@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div>
+        <h3>여기에 create 내용작성</h3>
+        <form action="" method='POST'>
+            {% csrf_token %}
+            {{ form.as_p}}
+            <input type="submit" value='작성'>
+        </form>
+    </div>
+{% endblock content %}
